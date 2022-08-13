@@ -309,7 +309,7 @@
   border-radius: 10px;
   box-sizing: border-box;
   background-color: white;
-  margin-right: 40px;
+  margin: 0 40px 0 0;
 }
 
 .team__card:last-child {
@@ -361,3 +361,31 @@
   color: white;
 }
 
+.team__line-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.team__line {
+  margin: 0;
+	padding: 0;
+	border: none;
+  width: 260px;
+	border-top: 1px solid #cccccc;
+}
+
+.team__arrow {
+  padding: 0;
+  margin: 0;
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-5px);
+
+}
