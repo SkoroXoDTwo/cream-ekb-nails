@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+@keyframes up-down {
+  to {
+    transform: translateY(0);
+  }
+
+  from {
+    transform: translateY(-20px);
+  }
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.background-image {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  border: none;
+  z-index: -3;
+  background: url(../images/background-image.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+/* ---- ШАпка сайта -------------------------------------------------------- */
+.header {
+  position: relative;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 580px;
+  box-sizing: border-box;
+  /* выше установили ограничения для секции */
+}
+
+.header__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+  
+}
+
+.header__menu {
+  align-self: flex-end;
+}
+
+.header__link {
+  padding: 0;
+  margin: 0 30px 0 0;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+.header__button-record {
+  width: 180px;
+  height: 40px;
+  margin: 10px 20px 0 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header__logo {
+  font-size: 80px;
+  font-weight: 200;
+  font-style: italic;
+  color: white;
+  padding: 20px;
+  border: 1px solid white;
+}
+
+.up-down {
+  animation: 2s linear 0s infinite alternate up-down;
+}
+
+.header__button-down {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  border: none;
+  background: none;
+  font-size: 70px;
+  color: white;
+  font-weight: 100;
+}
+
+/* ---- Секция price -------------------------------------------------------- */
+
+.price {
+  padding: 50px 0 80px;
+  background-color: white;
+}
+.price__container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  box-sizing: border-box;
+}
+
+.price__buttons {
+  display: flex;
+  justify-content: center;
+  width: 570px;
+}
+
+.price__button {
+  box-sizing: border-box;
+  width: calc(100% / 3);
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  background: none;
+  border-top: 1px solid #777;
+  border-right: 1px solid #777;
+  border-bottom: 1px solid #777;
+  border-left: none;
+  
+}
+
+.price__button:first-child {
+  border-left: 1px solid #777;
+  border-radius: 25px 0 0 25px;
+}
+
+.price__button:last-child {
+  border-radius: 0 25px 25px 0;
+}
+
+.price__button_active {
+  background-color: black;
+  color: white;
+}
+
+.two-columns {
+  display: flex;
+}
+
+.two-columns__column {
+  width: 50%;
+  padding: 50px 40px 0 0;
+}
+
+.two-columns__column:last-child {
+  width: 50%;
+  padding: 50px 0 0 0;
+}
+
+.card {
+  padding-bottom: 40px;
+}
+
+.card:last-child {
+  padding-bottom: 0;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__title {
+  padding: 0 40px 0 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.card__price {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #d30073;
+}
+
+.card__line {
+  margin: 10px 0;
+	padding: 0;
+	border: none;
+	border-top: 1px solid #777;
+}
+
+.card__main-text {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+/* ---- Секция description-company -------------------------------------------------------- */
+.description-company {
+  padding: 130px 0 80px 0;
+}
+
+.description-company__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 90px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.description-company__title {
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.23;
+  font-weight: 400;
+}
+
+.description-company__line {
+  margin: 40px 0;
+	padding: 0;
+	border: none;
+  width: 50px;
+	border-top: 3px solid #d30073;
+}
+
+.description-company__main-text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: black;
+}
+
+/* ---- team -------------------------------------------------------- */
+
+.team {
+  background-color: #f0f0f0;
+  padding: 60px 0;
+}
+
+.team__container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.team__title {
+  padding: 0;
+  margin: 0 0 40px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.23;
+}
+
+.team__heart {
+  color: red;
+  font-size: 34px;
+}
+
+.team__cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-right: 40px;
+}
+
+.team__card:last-child {
+  margin-right: 0;
+}
+
+.team__img {
+  width: 100%;
+  height: 345px;
+  padding: 0;
+  margin: 0 0 20px 0;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.team__name {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0 0 2px 0;
+}
+
+.team__description {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.team__button {
+  padding: 0;
+  margin: 0 0 20px 0;
+  width: 120px;
+  height: 35px;
+  border: 1px solid #c7c7c7;
+  background-color: #f5f5f5;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 400;
+  border-radius: 30px;
+}
+
+.team__button:hover {
+  cursor: pointer;
+  background: rgb(211, 0, 115);
+  color: white;
+}
+
