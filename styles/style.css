@@ -84,7 +84,14 @@
   color: white;
   font-size: 14px;
   font-weight: 500;
+  transition: background 0.2s;
 }
+
+.header__button-record:hover {
+  cursor: pointer;
+  background: rgb(211, 0, 115);
+}
+
 
 .header__logo {
   font-size: 80px;
@@ -126,19 +133,19 @@
   box-sizing: border-box;
 }
 
-.price__buttons {
+.button-option {
   display: flex;
   justify-content: center;
   width: 570px;
+  height: 50px;
 }
 
-.price__button {
-  box-sizing: border-box;
-  width: calc(100% / 3);
-  height: 47px;
+.button-option__element {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: calc(100% / 3);
+  box-sizing: border-box;
   color: #333333;
   font-size: 14px;
   font-weight: 400;
@@ -147,19 +154,26 @@
   border-right: 1px solid #777;
   border-bottom: 1px solid #777;
   border-left: none;
-
 }
 
-.price__button:first-child {
+.button-option__element_count_two {
+  width: calc(100% / 2);
+}
+
+.button-option__element:hover {
+  cursor: pointer;
+}
+
+.button-option__element:first-child {
   border-left: 1px solid #777;
   border-radius: 25px 0 0 25px;
 }
 
-.price__button:last-child {
+.button-option__element:last-child {
   border-radius: 0 25px 25px 0;
 }
 
-.price__button_active {
+.button-option__element_active {
   background-color: black;
   color: white;
 }
@@ -353,6 +367,8 @@
   line-height: 1;
   font-weight: 400;
   border-radius: 30px;
+  transition: background 0.2s;
+  transition: color 0.2s;
 }
 
 .team__button:hover {
@@ -419,3 +435,41 @@
   line-height: 28px;
   font-weight: 400;
 }
+
+
+/* ---- Секция team -------------------------------------------------------- */
+
+.photo {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0 60px;
+  background-color: white;
+}
+.photo__container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo__work {
+  margin: 45px 10px 0;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: content-box;
+
+}
+
+.gallery__item {
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  height: 230px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+
