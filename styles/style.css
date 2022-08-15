@@ -12,14 +12,15 @@
 
 @keyframes scale-opacity {
   to {
+    transform: scale(70%);
+    opacity: 1;
+  }
+
+  from {
     transform: scale(200%);
     opacity: 0;
   }
 
-  from {
-    transform: scale(70%);
-    opacity: 1;
-  }
 }
 
 .body {
@@ -72,12 +73,15 @@
   z-index: 3;
   position: fixed;
   box-sizing: border-box;
-  animation: 1s linear 0s infinite alternate scale-opacity;
+  transform: scale(70%);
+  animation: 2s linear 0s infinite reverse scale-opacity;
 }
 
 /* ---- ШАпка сайта -------------------------------------------------------- */
 .header {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .header__container {
@@ -87,7 +91,6 @@
   align-items: center;
   z-index: 1;
   width: 1200px;
-  margin: 0 auto;
   min-height: 580px;
   box-sizing: border-box;
   /* выше установили ограничения для секции */
@@ -117,6 +120,11 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-decoration: none;
+  transition: opacity 0.4s;
+}
+
+.header__link:hover {
+  opacity: .7;
 }
 
 .header__button-record {

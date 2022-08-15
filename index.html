@@ -12,24 +12,24 @@
   <div class="background-image"></div>
 
   <div class="button-record">
-    <a class="button-record__main">ОНЛАЙН ЗАПИСЬ</a>
+    <a class="button-record__main" href="#">ОНЛАЙН ЗАПИСЬ</a>
     <div class="button-record__border-anim"></div>
   </div>
-  
 
-  <header class="header">
+
+  <header class="header" id="header">
 
       <video class="header__background" src="./images/background.mp4" controlsList="nodownload" autoplay muted loop></video>
 
       <div class="header__container">
         <nav class="header__menu">
-          <a class="header__link" href="">В начало</a>
-          <a class="header__link" href="">ПРАЙС</a>
-          <a class="header__link" href="">О НАС</a>
-          <a class="header__link" href="">КОМАНДА</a>
-          <a class="header__link" href="">ГАЛЕРЕЯ</a>
-          <a class="header__link" href="">ОТЗЫВЫ</a>
-          <a class="header__link" href="">КОНТАКТЫ</a>
+          <a class="header__link" href="#header">В начало</a>
+          <a class="header__link" href="#price">ПРАЙС</a>
+          <a class="header__link" href="#description-company">О НАС</a>
+          <a class="header__link" href="#team">КОМАНДА</a>
+          <a class="header__link" href="#photo">ГАЛЕРЕЯ</a>
+          <a class="header__link" href="#feedback-section">ОТЗЫВЫ</a>
+          <a class="header__link" href="#contact">КОНТАКТЫ</a>
           <button class="header__button-record">Онлайн-запись</button>
         </nav>
 
@@ -44,7 +44,7 @@
 
   <main class="main" id="main">
 
-    <section class="price">
+    <section class="price" id="price">
       <div class="price__container">
         <div class="button-option">
           <button class="button-option__element button-option__element_active">Маникюр</button>
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <section class="description-company">
+    <section class="description-company" id="description-company">
       <div class="description-company__container">
         <h2 class="description-company__title">Немного о Cream EKB</h2>
         <hr class="description-company__line">
@@ -156,7 +156,7 @@
 
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
       <div class="team__container">
         <article class="name-section">
           <h2 class="name-section__title">Наша команда <span class="name-section__emoji">&#10084;</span></h2>
@@ -206,7 +206,7 @@
       </div>
     </section>
 
-    <section class="photo">
+    <section class="photo" id="photo">
       <div class="photo__container">
         <div class="button-option">
           <button class="button-option__element button-option__element_count_two button-option__element_active">Галерея работ</button>
@@ -236,7 +236,7 @@
       </div>
     </section>
 
-    <section class="feedback-section">
+    <section class="feedback-section" id="feedback-section">
       <div class="feedback-section__container">
         <article class="name-section">
           <h2 class="name-section__title">Отзывы <span class="name-section__emoji name-section__emoji_color_gold">&#9733;</span></h2>
@@ -291,7 +291,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact__container">
         <a class="contact__link-title" href="#" target="_blank">+7 922 037-14-08</a>
         <a class="contact__link-title" href="#" target="_blank">Написать WhatsApp</a>
