@@ -10,6 +10,18 @@
   }
 }
 
+@keyframes scale-opacity {
+  to {
+    transform: scale(200%);
+    opacity: 0;
+  }
+
+  from {
+    transform: scale(70%);
+    opacity: 1;
+  }
+}
+
 .body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -28,6 +40,39 @@
   z-index: -3;
   background: url(../images/background-image.jpg) no-repeat;
   background-size: 100% 100%;
+}
+
+.button-record__main {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 4;
+  border-radius: 50%;
+  background-color: #333333;
+  color: white;
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.button-record__border-anim {
+  border: 8px solid #d30073;
+  background: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 3;
+  position: fixed;
+  box-sizing: border-box;
+  animation: 1s linear 0s infinite alternate scale-opacity;
 }
 
 /* ---- ШАпка сайта -------------------------------------------------------- */
